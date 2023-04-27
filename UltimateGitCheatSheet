@@ -1,0 +1,57 @@
+vishus@mckays-MBP Lab-05a % git checkout -b sum1
+Switched to a new branch 'sum1'
+vishus@mckays-MBP Lab-05a % git add sum1
+fatal: pathspec 'sum1' did not match any files
+vishus@mckays-MBP Lab-05a % git add js/app.js
+vishus@mckays-MBP Lab-05a % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+vishus@mckays-MBP Lab-05a % git commit -m "First Problem Edit 1"
+On branch sum1
+nothing to commit, working tree clean
+vishus@mckays-MBP Lab-05a % git pull origin main
+From https://github.com/codexwithg/Lab-05a
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+vishus@mckays-MBP Lab-05a % git push origin main
+Everything up-to-date
+vishus@mckays-MBP Lab-05a % git push origin sum1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 446 bytes | 446.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'sum1' on GitHub by visiting:
+remote:      https://github.com/codexwithg/Lab-05a/pull/new/sum1
+remote: 
+To https://github.com/codexwithg/Lab-05a.git
+ * [new branch]      sum1 -> sum1
+vishus@mckays-MBP Lab-05a % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+vishus@mckays-MBP Lab-05a % git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 629 bytes | 629.00 KiB/s, done.
+From https://github.com/codexwithg/Lab-05a
+   c9ed3bf..8de532c  main       -> origin/main
+Updating c9ed3bf..8de532c
+Fast-forward
+ js/app.js | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+vishus@mckays-MBP Lab-05a % get status
+zsh: command not found: get
+vishus@mckays-MBP Lab-05a % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+vishus@mckays-MBP Lab-05a % git branch
+* main
+  sum1
+vishus@mckays-MBP Lab-05a % 
